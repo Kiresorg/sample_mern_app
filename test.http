@@ -1,0 +1,22 @@
+// GET root of app
+
+GET https://localhost:8080/ HTTP/1.1
+
+
+### GET all Addresses
+GET https://localhost:8080/api/address HTTP/1.1
+
+### CREATE new address
+POST https://localhost:8080/api/address HTTP/1.1
+Content-Type: application/json
+
+{   
+   "address_line_1": "900 Point Place",
+    "address_line_2": "Apt 4",
+    "city": "Point Blvd",
+    "state": "Wisconsin",
+    "zip": "23440" 
+}
+
+### GET address by ID
+GET https://localhost:8080/api/address/1 HTTP/1.1
